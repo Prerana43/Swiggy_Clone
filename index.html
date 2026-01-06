@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+  <div>
+    <div class="shadow-lg md:flex md:justify-between">
+      <div class="flex justify-between p-2 md:ml-14 " id="logo">
+        <svg class="hover:scale-110" viewBox="0 0 61 61" height="49" width="49">
+          <g clip-path="url(#a)">
+            <path fill="#FF5200"
+              d="M.32 30.5c0-12.966 0-19.446 3.498-23.868a16.086 16.086 0 0 1 2.634-2.634C10.868.5 17.354.5 30.32.5s19.446 0 23.868 3.498c.978.774 1.86 1.656 2.634 2.634C60.32 11.048 60.32 17.534 60.32 30.5s0 19.446-3.498 23.868a16.086 16.086 0 0 1-2.634 2.634C49.772 60.5 43.286 60.5 30.32 60.5s-19.446 0-23.868-3.498a16.086 16.086 0 0 1-2.634-2.634C.32 49.952.32 43.466.32 30.5Z">
+            </path>
+            <path fill="#fff" fill-rule="evenodd"
+              d="M32.317 24.065v-6.216a.735.735 0 0 0-.732-.732.735.735 0 0 0-.732.732v7.302c0 .414.336.744.744.744h.714c10.374 0 11.454.54 10.806 2.73-.03.108-.066.21-.102.324-.006.024-.012.048-.018.066-2.724 8.214-10.092 18.492-12.27 21.432a.764.764 0 0 1-1.23 0c-1.314-1.776-4.53-6.24-7.464-11.304-.198-.462-.294-1.542 2.964-1.542h3.984c.222 0 .402.18.402.402v3.216c0 .384.282.738.666.768a.73.73 0 0 0 .582-.216.701.701 0 0 0 .216-.516v-4.362a.76.76 0 0 0-.756-.756h-8.052c-1.404 0-2.256-1.2-2.814-2.292-1.752-3.672-3.006-7.296-3.006-10.152 0-7.314 5.832-13.896 13.884-13.896 7.17 0 12.6 5.214 13.704 11.52.006.054.048.294.054.342.288 3.096-7.788 2.742-11.184 2.76a.357.357 0 0 1-.36-.36v.006Z"
+              clip-rule="evenodd"></path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" d="M.32.5h60v60h-60z"></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+        <a href="#" class="flex justify-start md:p-4 md:pr-8 hover:text-orange-500 hover:cursor-pointer ">
+          <span>Other
+            <hr class="w-10 h-px my-2 bg-gray-200 border-0 dark:bg-gray-700 ">
+          </span>
+
+        </a>
+
+      </div>
+
+      <div class="flex md:justify-end md:mr-12 justify-between ">
+
+        <a class="md:flex justify-end md:p-8 sm:p-2 sm:m-2 hover:text-orange-500 hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+          </svg>
+          <span>Swiggy Corporate</span>
+        </a>
+        <a class="md:flex justify-end md:p-8 sm:p-2 sm:m-2 hover:text-orange-500 hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+          <span>Search</span>
+        </a>
+        <a class="md:flex justify-end md:p-8 sm:p-2 sm:m-2 hover:text-orange-500 hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m8.99 14.993 6-6m6 3.001c0 1.268-.63 2.39-1.593 3.069a3.746 3.746 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043 3.745 3.745 0 0 1-3.068 1.593c-1.268 0-2.39-.63-3.068-1.593a3.745 3.745 0 0 1-3.296-1.043 3.746 3.746 0 0 1-1.043-3.297 3.746 3.746 0 0 1-1.593-3.068c0-1.268.63-2.39 1.593-3.068a3.746 3.746 0 0 1 1.043-3.297 3.745 3.745 0 0 1 3.296-1.042 3.745 3.745 0 0 1 3.068-1.594c1.268 0 2.39.63 3.068 1.593a3.745 3.745 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.297 3.746 3.746 0 0 1 1.593 3.068ZM9.74 9.743h.008v.007H9.74v-.007Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm4.125 4.5h.008v.008h-.008v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+          </svg>
+          <span>Offers</span>
+        </a>
+        <a class="md:flex justify-end md:p-8 sm:p-2 sm:m-2 hover:text-orange-500 hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+          </svg>
+          <span>Help</span>
+        </a>
+        <a class="md:flex justify-end md:p-8 sm:p-2 sm:m-2 hover:text-orange-500 hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          </svg>
+          <span>Sign In</span>
+        </a>
+        <a class="md:flex justify-end md:p-8 sm:p-2 sm:m-2 hover:text-orange-500 hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+          </svg>
+          <span>Cart</span>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="text-black text-2xl md:ml-36 ml-10 font-extrabold">
+        Restaurants with online food delivery in Bhopal
+
+      </h1>
+    </div>
+    <div class="gird grid-cols-6">
+      <div class="flex md:ml-36 ml-6 p-4">
+        <div
+          class="md:h-9 h-12 w-20 p-1 m-2 font-semibold text-sm md:rounded-full rounded-2xl border-2 border-gray-200 shadow-s flex justify-between hover:cursor-pointer">
+          <span class="">Filter</span>
+          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+          </svg>
+
+        </div>
+        <div
+          class="md:h-9 h-12 w-24 p-1 m-2 font-semibold text-sm md:rounded-full rounded-2xl border-2 border-gray-200 shadow-s flex justify-between hover:cursor-pointer">
+          <span class="">Sort By</span>
+          <svg class="text-sm" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+
+        </div>
+        <div
+          class="md:h-9 h-12 w-24 p-1 m-2 font-semibold text-sm md:rounded-full rounded-2xl border-2 border-gray-200 shadow-s flex  hover:cursor-pointer">
+          <span>Free Delivery</span>
+        </div>
+        <div
+          class="md:h-9 h-12 w-24 p-1 m-2 text-sm font-semibold md:rounded-full rounded-2xl border-2 border-gray-200 shadow-s flex hover:cursor-pointer">
+          <span>Ratings 4.0+</span>
+        </div>
+        <div
+          class="md:h-9 h-12 w-16 p-1 m-2 text-sm font-semibold md:rounded-full rounded-2xl border-2 border-gray-200 shadow-s flex hover:cursor-pointer">
+          <span>Offers</span>
+        </div>
+        <div
+          class="md:h-9 h-12 w-28 p-1 m-2 text-sm font-semibold md:rounded-full rounded-2xl border-2 border-gray-200 shadow-s flex hover:cursor-pointer">
+          <span>Rs.300-Rs.600</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 ">
+      <div class="md:flex md:ml-36 ml-12 md:p-8 p-4 space-x-6 ">
+        <div class="hover:scale-95 hover:cursor-pointer">
+          <img src="Images/dish1.avif" class="md:w-52 w-full h-36 rounded-3xl shadow-inner object-cover">
+          <div class="">
+            <span class="text-md font-semibold">Domino's Pizza</span>
+            <span class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="green" class="size-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg> 4.1 20-25 mins</span>
+            <span class="block text-sm text-gray-600">Pizzas, Italian, Pastas,...</span>
+            <span class="block text-sm text-gray-600">Malviya Nagar</span>
+          </div>
+        </div>
+        <div class="hover:scale-95 hover:cursor-pointer">
+          <img src="/Images/dish2.avif" class="md:w-52 w-full h-36 rounded-3xl shadow-inner object-cover">
+          <div>
+            <span class="text-md font-semibold">Oven Story Pizza-...</span>
+            <span class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="green" class="size-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg> 4.6 20-25 mins</span>
+            <span class="block text-sm text-gray-600">Pizzas, Pastas, Italian,...</span>
+            <span class="block text-sm text-gray-600">Maharana Pratap Nagar</span>
+          </div>
+        </div>
+        <div class="hover:scale-95 hover:cursor-pointer">
+          <img src="Images/dish11.avif" class="md:w-52 w-full h-36 rounded-3xl shadow-inner object-cover">
+          <div class="">
+            <span class="text-md font-semibold">South Indian Food</span>
+            <span class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="green" class="size-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg> 4.1 20-25 mins</span>
+            <span class="block text-sm text-gray-600">Pizzas, Italian, Pastas,...</span>
+            <span class="block text-sm text-gray-600">Malviya Nagar</span>
+          </div>
+        </div>
+        <div class="hover:scale-95 hover:cursor-pointer">
+          <img src="Images/dish12.avif" class="md:w-52 w-full h-36 rounded-3xl shadow-inner object-cover">
+          <div class="">
+            <span class="text-md font-semibold">Paneer Butter Masala</span>
+            <span class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="green" class="size-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg> 4.1 20-25 mins</span>
+            <span class="block text-sm text-gray-600">Pizzas, Italian, Pastas,...</span>
+            <span class="block text-sm text-gray-600">Malviya Nagar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 border-b border-gray-200 border-solid">
+      <div class="md:flex md:ml-36 ml-12 md:p-8 p-4 space-x-6 ">
+        <div class="hover:scale-95 hover:cursor-pointer">
+          <img src="Images/dish3.avif" class="md:w-52 w-full h-36 rounded-3xl shadow-inner object-cover">
+          <div class="">
+            <span class="text-md font-semibold">Chicken Burger</span>
+            <span class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="green" class="size-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg> 4.1 20-25 mins</span>
+            <span class="block text-sm text-gray-600">Pizzas, Italian, Pastas,...</span>
+            <span class="block text-sm text-gray-600">Malviya Nagar</span>
+          </div>
+        </div>
+        <div class="hover:scale-95 hover:cursor-pointer">
+          <img src="/Images/dish4.avif" class="md:w-52 w-full h-36 rounded-3xl shadow-inner object-cover">
+          <div>
+            <span class="text-md font-semibold">KFC's Chicken</span>
+            <span class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="green" class="size-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg> 4.6 20-25 mins</span>
+            <span class="block text-sm text-gray-600">Pizzas, Pastas, Italian,...</span>
+            <span class="block text-sm text-gray-600">Maharana Pratap Nagar</span>
+          </div>
+        </div>
+        <div class="hover:scale-95 hover:cursor-pointer">
+          <img src="Images/dish5.avif" class="md:w-52 w-full h-36 rounded-3xl shadow-inner object-cover">
+          <div class="">
+            <span class="text-md font-semibold">Burger King's Burger</span>
+            <span class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="green" class="size-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg> 4.1 20-25 mins</span>
+            <span class="block text-sm text-gray-600">Pizzas, Italian, Pastas,...</span>
+            <span class="block text-sm text-gray-600">Malviya Nagar</span>
+          </div>
+        </div>
+        <div class="hover:scale-95 hover:cursor-pointer">
+          <img src="Images/dish6.avif" class="md:w-52 w-full h-36 rounded-3xl shadow-inner object-cover">
+          <div class="">
+            <span class="text-md font-semibold">Butter Chicken</span>
+            <span class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="green" class="size-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg> 4.1 20-25 mins</span>
+            <span class="block text-sm text-gray-600">Pizzas, Italian, Pastas,...</span>
+            <span class="block text-sm text-gray-600">Malviya Nagar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8">
+      <span class="md:ml-36 ml-10 text-xl font-extrabold">Best Places to Eat Across Cities</span>
+      <div>
+        <div class="flex justify-center p-2 m-2">
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Banglore</div>
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Pune</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Mumbai</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Delhi</div>
+        </div>
+        <div class="flex justify-center p-2 m-2">
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Hyderabad</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Kolkata</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Chennai</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Chandigarh</div>
+        </div>
+        <div class="flex justify-center p-2 m-2">
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Ahmedabad</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Jaipur</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Best Restaurants in Nagpur</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Show More</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-8">
+      <span class="md:ml-36 ml-10 text-xl font-extrabold">Best Cuisines Near Me</span>
+      <div>
+        <div class="flex justify-center p-2 m-2">
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Chinese Restaurant Near Me</div>
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            South Indian Restaurant Near Me</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Indian Restaurant Near Me</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Kerala Restaurant Near Me</div>
+        </div>
+        <div class="flex justify-center p-2 m-2">
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Korean Restaurant Near Me</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            North Indian Restaurant Near Me</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Seafood Restaurant Near Me</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Bengali Restaurant Near Me</div>
+        </div>
+        <div class="flex justify-center p-2 m-2">
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Bengali Restaurant Near Me</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Italian Restaurant Near Me</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Andhra Restaurant Near Me</div>
+
+          <div
+            class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+            Show More</div>
+        </div>
+      </div>
+      <div class="mt-8">
+        <span class="md:ml-36 ml-10 text-xl font-extrabold">Explore Every Restaurant Near Me</span>
+        <div class="ml-32 mr-32">
+          <div class="flex p-2 m-2">
+            <div
+              class="md:h-12 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+              Explore Restaurants Near Me</div>
+            <div
+              class="md:h-14 h-28 font-semibold text-md w-64 p-1 m-2 rounded-lg border-2 border-gray-200 flex justify-center text-gray-800 hover:cursor-pointer">
+              Explore Top Rated Restaurants Near Me</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-200  ">
+        <div class="flex justify-between md:mr-32 md:ml-32 ml-10 mr-10 border-t border-black mt-8">
+          <span class="font-bold text-2xl text-gray-900 mt-6">For better experience, download the Swiggy app now
+          </span>
+          <div class="md:flex md:mt-8 mt-4">
+            <div class="w-52 h-14 hover:cursor-pointer">
+              <img src="/Logo and svgs/play_store.avif" alt="">
+            </div>
+            <div class="w-52 h-10 md:m-0 m-4 hover:cursor-pointer">
+              <img src="/Logo and svgs/app_store.avif" alt="">
+            </div>
+
+          </div>
+        </div>
+        <div>
+          <div class="flex md:ml-96 ml-10 mt-6 p-4">
+            <div class="">
+              <span class="block font-semibold text-black text-lg p-2">Company</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">About Us</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Swiggy Corporate</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Careers</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Team</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Swiggy One</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Swiggy Instamart</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Swiggy Dine</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Swiggy Gennie</span>
+
+            </div>
+            <div class="">
+              <span class="block font-semibold text-black text-lg p-2">Contact Us</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Help & Support</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Partner with us</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Ride with us</span>
+              <span class="block font-semibold text-black text-lg p-2 mt-8">Legal</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Terms & Conditions</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Cookie Policy</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Privacy Policy</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Investor Relation</span>
+
+
+            </div>
+            <div class="">
+              <span class="block font-semibold text-black text-lg p-2">Available in:</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Banglore</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Gurgaon</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Hyderabad</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Delhi</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Mumbai</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Pune</span>
+              <span
+                class="block text-gray-500 text-md font-semibold p-1.5 border-2 border-gray-300 rounded-md hover:cursor-pointer">589
+                cities</span>
+
+
+            </div>
+            <div class="">
+              <span class="block font-semibold text-black text-lg p-2">Life at Swiggy</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Explore with Swiggy</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Swiggy News</span>
+              <span class="block text-gray-500 text-md font-semibold p-1.5">Snackables</span>
+              <span class="block font-semibold text-black text-lg p-2 mt-8">Social Links</span>
+              <div class="flex ">
+                <div class="h-4 w-4 m-2 hover:cursor-pointer">
+                  <img src="/Logo and svgs/icon-linkedin.avif" alt="">
+                </div>
+                <div class="h-4 w-4 m-2 hover:cursor-pointer">
+                  <img src="/Logo and svgs/icon-instagram.avif" alt="">
+                </div>
+                <div class="h-4 w-4 m-2 hover:cursor-pointer">
+                  <img src="/Logo and svgs/icon-pinterest.avif">
+                </div>
+                <div class="h-4 w-4 m-2 hover:cursor-pointer">
+                  <img src="/Logo and svgs/icon-twitter.avif" alt="">
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
